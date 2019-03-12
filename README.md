@@ -18,4 +18,6 @@ Couple Steps involved
    Randomly generate 1/10 of the number of permutation to represent the possible data as a whole
    
 #3 Switch gears: attempting to streamline calculation for final scoring
+   Web IDE that I was using to develop Score Calculation doesn't have a console to take user values
+   Used hardcoded values defined at top, can adjust 
    
