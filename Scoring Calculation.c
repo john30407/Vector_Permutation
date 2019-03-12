@@ -69,31 +69,6 @@ int main(void) {
     printf("FINAL SCORE:\n  A     B      C      D\n ");
     array_print(R_LEN, final_result,2);    
 
-    /*for(int i=0; i<C_LEN; i++){
-        cat[0]=scores[i];
-        for(int j=0; j<C_LEN; j++){
-            cat[1]=scores[j];
-            for(int k=0; k<C_LEN; k++){
-                cat[2]=scores[k];
-                for(int a=0; a<C_LEN; a++){
-                    cat[3]=scores[a];
-                    for(int b=0; b<C_LEN; b++){
-                        cat[4]=scores[b];
-                        for(int c=0; c<C_LEN; c++){
-                            cat[5]=scores[c];
-                            ranking_score(V_LEN,R_LEN,cat,result);
-                            array_print(R_LEN, result,3);
-                            counter++;
-                            printf("\n");
-                        }
-                    }
-                }
-            }
-        }
-    }
-    array_print(V_LEN, cat);
-    printf("%d",counter);
-*/
     return 0;
 }
 
@@ -140,8 +115,6 @@ void final_ranking_score(int in1_len, int in2_len, int in3_len, int in4_len, int
     max3 = maxValue(in3,in3_len);
     max4 = maxValue(in4,in4_len);
     
-    //float max = maxValue(in1, in1_len);
-    //printf("%f",max);
     for(int i=0; i<result_len;i++){
         result[i] = (in1[i]*WEIGHT1/max1 + in2[i]*WEIGHT2/max2 + in3[i]*WEIGHT3/max3 + in4[i]*WEIGHT4/max4)*100;
     }
